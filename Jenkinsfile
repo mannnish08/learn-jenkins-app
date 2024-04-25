@@ -24,6 +24,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
+                    sh 'npm ci'
                     reuseNode true
                 }
             }
